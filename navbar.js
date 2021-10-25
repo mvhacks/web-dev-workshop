@@ -1,7 +1,7 @@
 export default function navbar() {
     // get the current link from the url, and set it to the active link
     const url = window.location.pathname;
-    const activeLink = url.substring(url.indexOf('/') + 1);
+    const activeLink = url.substring(url.lastIndexOf('/') + 1);
     if (activeLink === '') {
         window.location.href = '/index.html';
     }
