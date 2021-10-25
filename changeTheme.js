@@ -41,7 +41,9 @@ export default function setTheme() {
             localStorage.setItem('theme', themes[nextTheme]);
             theme = themes[nextTheme];
             const nextNextTheme = (nextTheme + 1) % themes.length;
-            el.textContent = "Change To " + themes[nextNextTheme].charAt(0).toUpperCase() + themes[nextNextTheme].slice(1);
+            document.querySelectorAll('.change-theme').forEach(el => {
+                el.textContent = "Change To " + themes[nextNextTheme].charAt(0).toUpperCase() + themes[nextNextTheme].slice(1);
+            });
         });
     })
 }
