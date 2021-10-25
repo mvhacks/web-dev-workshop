@@ -1,21 +1,39 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Functional</title>
-        <link rel="stylesheet" href="./style.css">
-        <script src="./script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js" type="module"></script>
     </head>
 <body>
     <nav>
-        <a href="/">Home</a>
-        <a href="/accessable.html">Accessable</a>
-        <a href="/engaging.html">Engaging</a>
-        <a href="/aesthetic.html">Aesthetic</a>
-        <a href="/functional.html">Functional</a>
-        <a href="/customizable.html">Customizable</a>
+        <a href="index.html">Home</a>
+        <a href="accessable.html">Accessable</a>
+        <a href="engaging.html">Engaging</a>
+        <a href="aesthetic.html">Aesthetic</a>
+        <a href="functional.html">Functional</a>
+        <a href="customizable.html">Customizable</a>
     </nav>
-    <h1>Functional</h1>
+    <div class="content">
+        <button class="change-theme">Change Theme</button>
+        <h1>Functional</h1>
+        <div class="main">
+            <div class="question">
+                <h2>Does anything break, freeze, become unresponsive, or slow down due to visitor interactions?</h2>
+                <ul>
+                    <li>Ex. when having canvas element or other complex animation make sure that the animation will adapt to be less intensive if fps goes below 30</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h2>Can the visitor interact with the site using the hardware they are browsing with, including touch screens, speed, keyboards, mice, and varying screen sizes?</h2>
+                <ul>
+                    <li>Functional websites react to the user’s device - this is called reactive design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
